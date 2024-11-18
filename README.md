@@ -40,7 +40,7 @@ Worst case is $\Theta(n^2)$ mostly due to the shifting of elements in merge. If 
 
 ## Plagiarism Acknowledgement
 
-I read (this geeks for geeks page)[https://www.geeksforgeeks.org/in-place-merge-sort/#] to look at different approaches to in-place merge sort
+I read [this geeks for geeks page](https://www.geeksforgeeks.org/in-place-merge-sort/#) to look at different approaches to in-place merge sort
 
 I also used Chatgpt to help me understand how to treat width in merge for the runtime analysis
 
