@@ -28,15 +28,17 @@ Together this makes merge O(width^2) in the worst case.
 
 Overall, if the inner loop runs O(n/width) and merge takes O(width^2) then
 
-$$O((n/width) * width^2) = O(n * width)
+```
+ O((n/width) * width^2) = O(n * width)
+```
 
 Summing the overall width = 1 + 2 + 4 + n = O(n)
 
 Total Time = $O(n * n)$
 
-Worst case is $\Theta(n^2)$ mostly due to the shifting of elements in merge. If merge were implemented better, the time complexity could be reduced to O(nlogn)
+Worst case is $\Theta(n^2)$ mostly due to the shifting of elements in merge. If merge were implemented better, the time complexity could be reduced to O(n logn)
 
-##Plagiarism Acknowledgement
+## Plagiarism Acknowledgement
 
 I read (this geeks for geeks page)[https://www.geeksforgeeks.org/in-place-merge-sort/#] to look at different approaches to in-place merge sort
 
