@@ -19,7 +19,7 @@ markdown file.
 
 Outer Loop doubles the subarray width, starting at 1 and increases as 2^k until the width goes past n which is the size of the array. 
 
-Total iterations = log<sub>2</sub>n
+Total outer loop iterations = log n
 
 Inner loop processes the subarrays of size width within each iteration of the outer loop. Each subarray is merged with a step size of 2 x width which means you'd need O(n/width) iterations in the worst case.
 
@@ -34,9 +34,12 @@ Overall, if the inner loop runs O(n/width) and merge takes O(width^2) then
 
 Summing the overall width = 1 + 2 + 4 + n = O(n)
 
-Total Time = $O(n * n)$
+Merge Time and Inner Loop = $O(n * n)$ = $O(n^2)$
 
-Worst case is $\Theta(n^2)$ mostly due to the shifting of elements in merge. If merge were implemented better, the time complexity could be reduced to O(n logn)
+Total Time = $O(n^2)$ and $O(logn)$ = $O(n^2 logn)$
+
+
+Edit: Worst case is $\Theta(n^2 log n)$ 
 
 ## Plagiarism Acknowledgement
 
